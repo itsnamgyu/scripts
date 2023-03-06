@@ -2,7 +2,7 @@
 DIR=$(pwd)
 if [ -f "/etc/debian_version" ]; then  # Debian Linux
 	sudo apt update -y
-	sudo apt install -y gcc git vim tmux rsync wget
+	sudo apt install -y gcc git vim tmux rsync wget htop
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then  # macOS
 	# brew
