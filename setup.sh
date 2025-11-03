@@ -35,7 +35,3 @@ git clone https://github.com/itsnamgyu/setup
 cd setup
 source install.sh
 source clean.sh
-
-echo "############################ Additional Items ###############################"
-echo "curl -L jupytervim.namgyu.com | sh"
-echo "https://www.anaconda.com/products/individual#Downloads"
