@@ -1,10 +1,6 @@
-
 DIR=$(pwd)
-if [ -f "/etc/debian_version" ]; then  # Debian Linux
-	sudo apt update -y
-	sudo apt install -y gcc git vim tmux rsync wget htop
 
-elif [[ "$OSTYPE" == "darwin"* ]]; then  # macOS
+lif [[ "$OSTYPE" == "darwin"* ]]; then  # macOS
 	# brew
 	command -v brew >/dev/null 2>&1 || {
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -14,11 +10,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then  # macOS
 	brew install bash
 	echo 'echo "/usr/local/bin/bash" >> /etc/shells' | sudo -s
 	chsh -s /usr/local/bin/bash
-  
-else
-	# Unsupported platform
-	echo "Only supports debian Linux and macOS."
-	exit
 fi
 
 git clone https://github.com/itsnamgyu/vim
