@@ -8,8 +8,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then  # macOS
 	
 	brew install tmux
 	brew install bash
-	echo 'echo "/usr/local/bin/bash" >> /etc/shells' | sudo -s
-	chsh -s /usr/local/bin/bash
+	echo 'echo "/bin/bash" >> /etc/shells' | sudo -s
+	chsh -s "/bin/bash
 fi
 
 git clone https://github.com/itsnamgyu/vim
